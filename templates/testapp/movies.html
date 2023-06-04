@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+  {% block body_block %}
+   <center> <h1>Movies Information</h1><hr> </center>
+    {%load cust_filters%}
+    <ul>
+      <li>{{msg1|c_and_c:'AffyInfo'}}</li>
+      <li>{{msg2|upper}}</li>
+      <li>{{msg3|add:"Gwalior"}}</li>
+      <li>{{msg4|f8upper}}</li>
+      <li>{{msg5}}</li>
+  </ul>
+  {%endblock%}
